@@ -6,7 +6,13 @@ const closeButton = document.getElementById("menu-close");
 const logoIconContainer = document.getElementById("logoIconContainer");
 const linksContainer = document.getElementById("linksContainer");
 const actionsContainer = document.getElementById("actionsContainer");
+console.log();
 // TODO: select all buttons within the links container
+console.log(
+  Object.values(linksContainer.children).map(
+    (butt, idx) => linksContainer.children[idx].classList
+  )
+);
 // TODO: select all buttons within actions container
 
 const handleMenuClick = () => {
@@ -40,6 +46,25 @@ const handleMenuClick = () => {
     "flex-col",
     "gap-2",
     "grow"
+  );
+
+  Object.values(linksContainer.getElementsByTagName("button")).forEach(
+    (butt) => {
+      butt.classList.remove(
+        "focus:ring",
+        "focus:ring-4",
+        "focus:ring-indigo-200"
+      );
+      butt.classList.add(
+        "gap-3",
+        "px-3",
+        "py-2",
+        "text-left",
+        "hover:bg-neutral-50",
+        "active:bg-neutral-50",
+        "active:text-neutral-900"
+      );
+    }
   );
 
   actionsContainer.classList.remove("hidden");
