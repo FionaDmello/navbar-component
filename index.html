@@ -20,12 +20,12 @@
     <style></style>
   </head>
   <body
-    class="bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB] border-2 border-green-300 px-4 md:px-8 xl:max-w-screen-xl xl:mx-auto"
+    class="bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB] px-4 md:px-8 xl:max-w-screen-xl xl:mx-auto"
   >
     <nav class="flex flex-col min-h-[95vh] pt-4">
       <div
         id="logoIconContainer"
-        class="grid grid-cols-4 md:grid-cols-6 md:gap-8 xl:grid-cols-12 py-3 border-2 border-red-300"
+        class="grid grid-cols-4 md:grid-cols-6 md:gap-8 xl:grid-cols-12 py-3"
       >
         <img
           src="./img/abstractly.png"
@@ -37,7 +37,7 @@
 
         <div class="flex col-span-1 xl:hidden justify-end items-center gap-2">
           <button
-            id="menu-close"
+            id="menuClose"
             class="hidden cursor-pointer gap-2 rounded text-[#525252] hover:text-[#171717] focus:text-[#171717] focus:ring focus:ring-4 focus:ring-indigo-200 disabled:text-[#A3A3A3]"
           >
             <svg
@@ -52,7 +52,7 @@
             </svg>
           </button>
           <button
-            id="menu-open"
+            id="menuOpen"
             class="cursor-pointer rounded text-[#525252] hover:text-[#171717] focus:text-[#171717] focus:ring focus:ring-4 focus:ring-indigo-200 disabled:text-[#A3A3A3]"
             onclick="handleMenuClick"
           >
@@ -108,7 +108,7 @@
       </div>
       <div
         id="actionsContainer"
-        class="hidden border-2 border-red-300 col-span-4 xl:flex self-center xl:col-span-3 xl:gap-4 xl:justify-end"
+        class="hidden col-span-4 xl:flex self-center xl:col-span-3 xl:gap-4 xl:justify-end"
       >
         <button
           class="px-4 py-2.5 gap-1.5 rounded border-[0.5px] border-[#E6E6E6] drop-shadow-sm bg-white hover:bg-[#FAFAFA] hover:border-[1px] focus:bg-[#FAFAFA] focus:border-[1px] focus:ring focus:ring-4 focus:ring-indigo-200 disabled:bg-[#F5F5F5] disabled:text-[#A3A3A3]"
@@ -124,7 +124,7 @@
       <!-- END OF DESKTIP VIEW CODE -->
     </nav>
 
-    <div class="credits border-2 border-pink-600">
+    <div class="credits">
       A challenge by
       <a
         href="https://www.greatfrontend.com/projects?ref=challenges"
