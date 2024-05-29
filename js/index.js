@@ -11,15 +11,21 @@ const handleMenuClick = () => {
   menuButton.classList.add("hidden");
   closeButton.classList.remove("hidden");
 
-  bodyEl.classList.remove("pt-4", "bg-gradient-to-br", "px-4");
+  bodyEl.classList.remove("bg-gradient-to-br", "pt-4");
+  bodyEl.classList.add("pt-8"),
+    navEl.classList.add("flex", "flex-col", "gap-6", "pb-4", "h-[90vh]");
 
-  navEl.classList.remove("pt-4");
-  navEl.classList.add("flex", "flex-col", "gap-6", "px-4", "pt-8", "pb-4");
-
-  logoIconContainer.classList.remove("py-3");
+  logoIconContainer.classList.remove("py-4");
 
   linksContainer.classList.remove("hidden", "self-center");
-  linksContainer.classList.add("flex", "flex-col", "gap-2", "grow");
+  linksContainer.classList.add(
+    "flex",
+    "flex-col",
+    "gap-2",
+    "grow",
+    "border-2",
+    "border-pink-500"
+  );
   Object.values(linksContainer.getElementsByTagName("button")).forEach(
     (button) => {
       button.classList.remove(
@@ -47,12 +53,18 @@ const handleCloseClick = () => {
   menuButton.classList.remove("hidden");
   closeButton.classList.add("hidden");
 
-  bodyEl.classList.add("pt-4", "bg-gradient-to-br", "px-4");
+  bodyEl.classList.add("bg-gradient-to-br", "pt-4");
+  bodyEl.classList.remove("pt-8"),
+    navEl.classList.remove(
+      "flex",
+      "flex-col",
+      "gap-6",
+      "pt-8",
+      "pb-4",
+      "h-[90vh]"
+    );
 
-  navEl.classList.add("pt-4");
-  navEl.classList.remove("flex", "flex-col", "gap-6", "px-4", "pt-8", "pb-4");
-
-  logoIconContainer.classList.add("py-3");
+  logoIconContainer.classList.add("py-4");
 
   linksContainer.classList.add("hidden", "self-center");
   linksContainer.classList.remove("flex", "flex-col", "gap-2", "grow");
