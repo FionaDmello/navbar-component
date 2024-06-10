@@ -18,14 +18,7 @@ const handleMenuClick = () => {
   logoIconContainer.classList.remove("py-4");
 
   linksContainer.classList.remove("hidden", "self-center");
-  linksContainer.classList.add(
-    "flex",
-    "flex-col",
-    "gap-2",
-    "border-2",
-    "border-pink-500",
-    "grow"
-  );
+  linksContainer.classList.add("flex", "flex-col", "gap-2", "grow");
   Object.values(linksContainer.getElementsByTagName("button")).forEach(
     (button) => {
       button.classList.remove(
