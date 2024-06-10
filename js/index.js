@@ -13,7 +13,7 @@ const handleMenuClick = () => {
 
   bodyEl.classList.remove("bg-gradient-to-br", "pt-4");
   bodyEl.classList.add("pt-8"),
-    navEl.classList.add("flex", "flex-col", "gap-6", "pb-4", "min-h-[95vh]");
+    navEl.classList.add("flex", "flex-col", "gap-6", "pb-4", "min-h-[90vh]");
 
   logoIconContainer.classList.remove("py-4");
 
@@ -22,9 +22,9 @@ const handleMenuClick = () => {
     "flex",
     "flex-col",
     "gap-2",
-    "grow",
     "border-2",
-    "border-pink-500"
+    "border-pink-500",
+    "grow"
   );
   Object.values(linksContainer.getElementsByTagName("button")).forEach(
     (button) => {
@@ -61,7 +61,7 @@ const handleCloseClick = () => {
       "gap-6",
       "pt-8",
       "pb-4",
-      "min-h-[95vh]"
+      "min-h-[90vh]"
     );
 
   logoIconContainer.classList.add("py-4");
