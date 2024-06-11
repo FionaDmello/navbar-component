@@ -52,7 +52,6 @@ const handleCloseClick = () => {
       "flex",
       "flex-col",
       "gap-6",
-      "pt-8",
       "pb-4",
       "min-h-[90vh]"
     );
